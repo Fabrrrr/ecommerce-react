@@ -1,6 +1,6 @@
-import './categories.styles.scss'
+import './productCard.styles.scss'
 
-const CategoryItem = ({ category }) => {
+const ProductCard = ({ category }) => {
   const { title, imageUrl } = category;
 
   return (
@@ -19,4 +19,4 @@ const CategoryItem = ({ category }) => {
   )
 }
 
-export default CategoryItem;
+export default ProductCard;

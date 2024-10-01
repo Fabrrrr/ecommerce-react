@@ -1,4 +1,4 @@
-import Directory from '../../components/directory/directory.component.jsx'
+import Menu from '../../components/Menu/menu.component.jsx'
 
 const Home = () => {
   
@@ -31,6 +31,6 @@ const Home = () => {
       }
     ]
 
-  return (<Directory categories={categories}/>);
+  return (<Menu categories={categories}/>);
 }
  export default Home;
