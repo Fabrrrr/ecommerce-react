@@ -14,17 +14,10 @@ import {
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
-const firebaseConfig = {
-    apiKey: "AIzaSyC4ERPjlB73ZiUQVVbwa5Cv8xzuPRXCSs8",
-    authDomain: "react-proj-db-5484b.firebaseapp.com",
-    projectId: "react-proj-db-5484b",
-    storageBucket: "react-proj-db-5484b.appspot.com",
-    messagingSenderId: "343130520483",
-    appId: "1:343130520483:web:50cf32b5a37e0d14c8f816"
-};
+
 
 // Initialize Firebase
-const firebaseApp = initializeApp(firebaseConfig);
+const firebaseApp = initializeApp(process.env.REACT_APP_FIREBASECONFIG);
 
 // Create google auth and make a mandatory account selection
 const googleProvider = new GoogleAuthProvider();
